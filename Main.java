@@ -1,16 +1,16 @@
 public class Main {
 
     public static void main(String[] args) {
-        HugeAssArray bigboye = new HugeAssArray();
-        Element[] bigArray = bigboye.getArray();
+        BigArray bigboye = new BigArray();
+        Element[] giganticArray = bigboye.getArray();
 
         printInstructions();
 
         int count = 1;
 
-        for (Element cation : bigArray) {
+        for (Element cation : giganticArray) {
             if (cation.getCharge() > 0) {
-                for (Element anion : bigArray) {
+                for (Element anion : giganticArray) {
                     if (anion.getCharge() < 0) {
                         System.out.println("#" + count + ": " + findSymbol(cation, anion) + ": " + findName(cation, anion));
                         count++;
@@ -21,7 +21,7 @@ public class Main {
     }
 
     public static void printInstructions() {
-        System.out.println("welcome to my shitty attempt at automating this");
+        System.out.println("welcome to my crappy attempt at automating this");
         System.out.println("if you want to add a new element, declare a new one and add it to the array");
         System.out.println("formatting follows: [symbol][subscript][symbol][subscript]");
     }
@@ -30,10 +30,14 @@ public class Main {
     public static String findSymbol(Element cation, Element anion) {
         int cationCharge = cation.getCharge();
         int anionCharge = anion.getCharge() * -1;
-
-        // I don't know why I have to multiply by -1
+        
         int commonMultiple = lcm(cation.getCharge(), anion.getCharge());
-
+        
+        // this breaks sometimes and I don't know why
+        if (commonMultiple < 0) {
+            commonMultiple *= -1;
+        }
+        
         int cationSubscript = commonMultiple / cationCharge;
         int anionSubscript = commonMultiple / anionCharge;
 
