@@ -1,4 +1,5 @@
-public class HugeAssArray {
+
+public class BigArray {
     private Element hydrogen;
     private Element lithium;
     private Element sodium;
@@ -43,9 +44,9 @@ public class HugeAssArray {
     private Element iodine;
     private Element astatine;
 
-    private Element[] BigMFArray;
+    private Element[] HugeArray;
 
-    public HugeAssArray() {
+    public BigArray() {
         hydrogen = new Element("hydrogen", "", "H", 1);
         lithium = new Element("lithium", "", "Li", 1);
         sodium = new Element("sodium", "", "Na", 1);
@@ -89,7 +90,7 @@ public class HugeAssArray {
         bromine = new Element("bromine", "bromide", "Br", -1);
         iodine = new Element("iodine", "iodide", "I", -1);
         astatine = new Element("astatine", "astatide", "At", -1);
-        BigMFArray = new Element[] {hydrogen, lithium, sodium, potassium, rubidium, cesium, francium, beryllium, magnesium,
+        HugeArray = new Element[] {hydrogen, lithium, sodium, potassium, rubidium, cesium, francium, beryllium, magnesium,
                                             calcium, strontium, barium, radium, scandium, yttrium, boron, aluminum,
                                             gallium, indium1, indium3, thallium1, thallium3, tin2, tin4, lead2, lead4,
                                             bismuth5, bismuth3, nitrogen, phosphorus, arsenic, antimony, oxygen, sulfur,
@@ -97,6 +98,6 @@ public class HugeAssArray {
     }
 
     public Element[] getArray() {
-        return BigMFArray;
+        return HugeArray;
     }
 }
