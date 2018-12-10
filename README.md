@@ -1,6 +1,10 @@
 # Ionic-Compound-Generator
 Somewhat functional. Didn't bother putting polyatomic ions nor a lot of transition metals because I rushed this in an hr at midnight
 
+It's not perfect. H2O spits out "hydrogen oxide" rather than "water", and I put "zinc (2)" as one of Zinc's ionic names so it spits out "zinc (2) [anion]". I don't think Java supports subscripts, either, so I can't have coefficients (then again, ionic compounds shouldn't have coefficients).
+
+Regardless, it works pretty well considering how little effort I put into it. 924 compounds in 2 hrs! Took me 3 days to write down 300.
+
 What the program outputs:
 
 ```
