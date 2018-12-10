@@ -5,7 +5,7 @@ What the program outputs:
 
 ```
 "C:\Program Files\Java\jdk-11.0.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.5\lib\idea_rt.jar=50350:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2018.2.5\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\Walter\IdeaProjects\chemthing1\out\production\chemthing1 Main
-welcome to my shitty attempt at automating this
+welcome to my crappy attempt at automating this
 if you want to add a new element, declare a new one and add it to the array
 formatting follows: [symbol][subscript][symbol][subscript]
 #1: HN: hydrogen nitride
